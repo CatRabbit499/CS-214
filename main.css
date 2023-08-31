@@ -10,7 +10,7 @@ body {
     font-family: helvetica;
 }
 
-ul {
+ol {
     font-family: helvetica;
 }
 
@@ -20,10 +20,6 @@ li {
 
 .list {
     list-style: square;
-}
-
-#msg {
-    font-family: monospace;
 }
 
 .btn {
