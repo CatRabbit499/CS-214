@@ -10,12 +10,43 @@ body {
     font-family: helvetica;
 }
 
+#main {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+@counter-style hex {
+    system: alphabetic;
+    symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9' 'A' 'B' 'C' 'D' 'E' 'F';
+    prefix: 'Lab ';
+    suffix: '  -  ';
+}
+
 ol {
+    padding-left: 5em;
+    list-style-type: hex;
     font-family: helvetica;
+    text-align: center;
+    margin: auto;
+    width: 18em;
 }
 
 li {
-    list-style: circle;
+    font-size: larger;
+    text-align: left;
+}
+
+li::marker {
+    /* font-family: monospace; */
+}
+
+a {
+    color: var(--fontColor);
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .list {
@@ -23,9 +54,9 @@ li {
 }
 
 .btn {
-    position: absolute;
+    /* position: absolute;
     top: 20px;
-    left: 250px;
+    left: 250px; */
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -41,9 +72,17 @@ li {
     --btnFontColor: var(--white);
 }
 
+.light-theme img {
+    filter: none;
+}
+
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--green);
     --btnBg: var(--white);
     --btnFontColor: var(--black);
+}
+
+.dark-theme img {
+    filter: invert();
 }
