@@ -1,0 +1,14 @@
+/*  Lab 3b CSS */
+
+ol {
+    list-style-type: auto;
+}
+
+iframe {
+    margin-top: 1em;
+    width: 601px;
+    height: auto;
+    overflow: hidden;
+}
+
+iframe #document {}
