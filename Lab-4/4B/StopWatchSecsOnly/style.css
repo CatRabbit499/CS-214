@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Lexend+Deca&family=Noto+Sans+Mono:wght@300&display=swap');
+
+body {
+  font-family: 'Noto Sans Mono', monospace;
+  color: #ddd9fc;
+}
+
+button {
+  background-color: #bcb5ff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 15px;
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+button:hover {
+  background-color: #8f86eb;
+  color: #b3adee;
+  box-shadow: 2px 4px;
+}
+
+.wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292642;
+  border: 3px ridge #bcb5ff;
+  border-radius: 1rem;
+  width: 30%;
+
+
+}
+
+.displayTime {
+  margin: 15px;
+}
