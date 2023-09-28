@@ -1,13 +1,28 @@
 /*  Lab 5 JS  */
-
+let form, result = {};
 window.onload = function () {
-    document.getElementById("fields").addEventListener('submit', e => e.preventDefault());
+    form = document.getElementById("fields");
+    form.addEventListener('submit', event => {
+        event.preventDefault();
+        console.log("Submitted! (js)");
+        let formdata = new FormData(form);
+    });
     genAttributes();
 }
 
-window.addEventListener("submit", function () {
-    console.log("Submitted! (js)")
+window.addEventListener("formdata", (event) => {
+    console.log("Formdata Event");
+    event.formData.forEach((v, k) => result[k] = v);
+    // var json = JSON.stringify(result);
+    console.log(result);
+
+    event.preventDefault();
 });
+
+function processForm(test) {
+    console.log('Submitted! <form>', test, new FormData(test));
+    // console.log();
+}
 
 const Names = Object.freeze({
     NOUN: "a noun",
@@ -19,12 +34,10 @@ const Names = Object.freeze({
 const NameIndex = Object.values(Names);
 
 function genAttributes() {
-    // Number Inputs
-    let inputs = document.getElementsByTagName("input");
-    for (let x = 0; x < inputs.length - 1; x++) {
-        inputs[x].setAttribute("id", x + 1);
-    }
     // Add Placeholder Text
-    let boxes = document.getElementsByName("box");
-    [2, 0, 1, 3, 4, null].forEach((v, k) => boxes[k].setAttribute("placeholder", NameIndex[v]));
+    let boxes = document.getElementsByClassName('box');
+    [2, 0, 1, 3, 4, null].forEach((v, k) => {
+        boxes[k].setAttribute("placeholder", NameIndex[v]);
+        // boxes[k].setAttribute("name", `box${k}`);
+    });
 }

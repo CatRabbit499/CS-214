@@ -18,15 +18,15 @@
     </nav>
     <main id="main">
         <h1>Lab 5 - MadLibs</h1>
-        <form id="fields" onsubmit="console.log('Submitted! <form>');">
+        <form id="fields" method="get" onsubmit="processForm(this)">
             <label for="boxes">Create a Brand New Sentence!</label>
             <fieldset name="boxes">
-                <input type="text" name="box" id="" placeholder="">
-                <input type="text" name="box" id="" placeholder="">
-                <input type="text" name="box" id="" placeholder="">
-                <input type="text" name="box" id="" placeholder="">
-                <input type="text" name="box" id="" placeholder="">
-                <input type="text" name="box" id="" placeholder="">
+                <input type="text" class="box" name="box1" placeholder="">
+                <input type="text" class="box" name="box2" placeholder="">
+                <input type="text" class="box" name="box3" placeholder="">
+                <input type="text" class="box" name="box4" placeholder="">
+                <input type="text" class="box" name="box5" placeholder="">
+                <input type="text" class="box" name="box6" placeholder="">
                 <input type="submit" action="submit" name="Submit">
             </fieldset>
         </form>
