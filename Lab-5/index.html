@@ -18,7 +18,7 @@
     </nav>
     <main id="main">
         <h1>Lab 5 - MadLibs</h1>
-        <form id="fields" method="get" onsubmit="processForm(this)">
+        <form id="fields" method="get">
             <label for="boxes">Create a Brand New Sentence!</label>
             <fieldset name="boxes">
                 <input type="text" class="box" name="box1" placeholder="">
@@ -26,11 +26,20 @@
                 <input type="text" class="box" name="box3" placeholder="">
                 <input type="text" class="box" name="box4" placeholder="">
                 <input type="text" class="box" name="box5" placeholder="">
-                <input type="text" class="box" name="box6" placeholder="">
                 <input type="submit" action="submit" name="Submit">
             </fieldset>
         </form>
-        <div id="output"></div>
+        <div id="output" hidden>
+            <p>
+                One sunny day, I went to the park with my <span id="box1">[plural noun]</span>.
+                We brought a picnic basket filled with <span id="box2">[noun]</span> and <span id="box3">[another
+                    noun]</span>.
+                As we sat on the grass, we started singing <span id="box4">[song]</span> at the top of our lungs.
+                People passing by couldn't help but <span id="box5">[verb]</span> along with us.
+                It was a day filled with laughter and music!
+            </p>
+            <input type="button" value="Go Again" onclick="resetForm();">
+        </div>
     </main>
     <footer>
 

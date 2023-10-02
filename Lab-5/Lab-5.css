@@ -1,5 +1,11 @@
 /*  Lab 5 CSS  */
 
+form {
+    /* width: 25%; */
+    width: max-content;
+    margin: auto;
+}
+
 label[for="boxes"] {
     display: block;
     margin: 2px;
@@ -7,6 +13,7 @@ label[for="boxes"] {
     border-style: groove;
     border-color: rgb(192, 192, 192);
     border-bottom: none;
+    padding: 10px 12px 10px 12px;
     color: grey;
 }
 
@@ -20,4 +27,26 @@ fieldset {
 input[type="submit"] {
     width: fit-content;
     margin: auto;
+    margin-top: 2px;
+}
+
+div#output {
+    width: 50%;
+    margin: auto;
+    margin-top: 1em;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 16px;
+    margin-bottom: 0;
+}
+
+input[type="button"] {
+    position: relative;
+    top: 2em;
 }

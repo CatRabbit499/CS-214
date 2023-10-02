@@ -4,7 +4,6 @@ window.onload = function () {
     form = document.getElementById("fields");
     form.addEventListener('submit', event => {
         event.preventDefault();
-        console.log("Submitted! (js)");
         let formdata = new FormData(form);
     });
     genAttributes();
@@ -12,16 +11,22 @@ window.onload = function () {
 
 window.addEventListener("formdata", (event) => {
     console.log("Formdata Event");
-    event.formData.forEach((v, k) => result[k] = v);
-    // var json = JSON.stringify(result);
-    console.log(result);
-
     event.preventDefault();
+    event.formData.forEach((v, k) => result[k] = v);
+    genMadLib();
 });
 
-function processForm(test) {
-    console.log('Submitted! <form>', test, new FormData(test));
-    // console.log();
+function genMadLib() {
+    for (let x in result) {
+        if (result[x] === '') continue;
+        document.getElementById(x).innerHTML = result[x].toLowerCase();
+    }
+    document.querySelector("#output").toggleAttribute("hidden", false);
+}
+
+function resetForm() {
+    form.reset();
+    document.querySelector("#output").toggleAttribute("hidden", true);
 }
 
 const Names = Object.freeze({
@@ -36,8 +41,7 @@ const NameIndex = Object.values(Names);
 function genAttributes() {
     // Add Placeholder Text
     let boxes = document.getElementsByClassName('box');
-    [2, 0, 1, 3, 4, null].forEach((v, k) => {
+    [2, 0, 1, 3, 4].forEach((v, k) => {
         boxes[k].setAttribute("placeholder", NameIndex[v]);
-        // boxes[k].setAttribute("name", `box${k}`);
     });
 }
