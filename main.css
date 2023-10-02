@@ -1,13 +1,28 @@
 :root {
+    --purple: #FF00FF;
     --green: #00FF00;
     --white: #FFFFFF;
     --black: #000000;
+    --blue: #0000FF;
+    --red: #FF0000;
 }
 
 body {
-    background: var(--bg);
-    color: var(--fontColor);
+    background: var(--body_bg);
+    color: var(--body_color);
     font-family: helvetica;
+}
+
+img {
+    filter: var(--img_filter);
+}
+
+h1 {
+    color: var(--h1_color);
+}
+
+h4 {
+    color: var(--h4_color);
 }
 
 #main {
@@ -48,7 +63,7 @@ li::marker {
 }
 
 a {
-    color: var(--fontColor);
+    color: var(--a_color);
 }
 
 a:hover {
@@ -60,35 +75,32 @@ a:hover {
 }
 
 .btn {
-    /* position: absolute;
-    top: 20px;
-    left: 250px; */
     height: 50px;
     width: 50px;
     border-radius: 50%;
     border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+    color: var(--button_color);
+    background-color: var(--button_bg);
 }
 
 .light-theme {
-    --bg: var(--green);
-    --fontColor: var(--black);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);
-}
-
-.light-theme img {
-    filter: none;
+    --body_bg: var(--green);
+    --body_color: var(--black);
+    --button_bg: var(--black);
+    --button_color: var(--white);
+    --h1_color: var(--blue);
+    --h4_color: var(--red);
+    --a_color: var(--body_color);
+    --img_filter: none;
 }
 
 .dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--green);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
-}
-
-.dark-theme img {
-    filter: invert();
+    --body_bg: var(--black);
+    --body_color: var(--green);
+    --button_bg: var(--white);
+    --button_color: var(--black);
+    --h1_color: var(--blue);
+    --h4_color: var(--purple);
+    --a_color: var(--body_color);
+    --img_filter: invert();
 }
