@@ -32,6 +32,12 @@ ol {
     width: 18em;
 }
 
+ul {
+    list-style: '└───  ';
+    position: relative;
+    left: -2.5em;
+}
+
 li {
     font-size: larger;
     text-align: left;
