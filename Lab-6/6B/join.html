@@ -18,10 +18,12 @@
     <main id="main">
         <h1>Thanks for joining our email list!</h1>
         <form id="confirm_form" name="confirm_form" action="confirmed.html" method="get">
-            <h1>Confirm your data:</h1>
-            <h4 id="firstName"></h4>
-            <h4 id="emailAddress"></h4>
-            <input type="button" id="confirmBtn" value="Confirm">
+            <fieldset>
+                <h1>Confirm your data</h1>
+                <h4><label for="B1">First Name:</label><span name="B1" id="firstName"></span></h4>
+                <h4><label for="B2">Email:</label><span name="B2" id="emailAddress"></span></h4>
+                <input type="button" id="confirmBtn" value="Confirm">
+            </fieldset>
         </form>
     </main>
     <footer>

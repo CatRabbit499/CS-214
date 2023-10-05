@@ -11,10 +11,16 @@ body {
     background: var(--body_bg);
     color: var(--body_color);
     font-family: helvetica;
+    font-size: larger;
 }
 
-img {
+#logo {
+    background-image: url("https://t3.ftcdn.net/jpg/05/35/11/72/240_F_535117233_Idp0T87UpxQkSmFfYInpB4nkW5NmL4Kf.jpg");
+    background-position: 50% 50%;
     filter: var(--img_filter);
+    height: 150px;
+    width: 120px;
+    margin: auto;
 }
 
 h1 {
@@ -25,41 +31,52 @@ h4 {
     color: var(--h4_color);
 }
 
+span {
+    color: var(--span_color);
+}
+
 #main {
     text-align: center;
-    width: fit-content;
+    width: max-content;
     margin: auto;
+    padding: 1em;
+    /* outline: 1px solid white; */
 }
 
 @counter-style hex {
     system: alphabetic;
     symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9' 'A' 'B' 'C' 'D' 'E' 'F';
     prefix: 'Lab ';
-    suffix: '  -  ';
+    suffix: ' - |';
 }
 
 ol {
-    padding-left: 5em;
     list-style-type: hex;
+    list-style-position: inside;
     font-family: helvetica;
-    text-align: center;
+    text-align: left;
+    padding: 0;
+    width: 20em;
     margin: auto;
-    width: 18em;
 }
 
 ul {
-    list-style: '└───  ';
-    position: relative;
-    left: -2.5em;
+    list-style-type: ' └───── |';
+    list-style-position: inside;
 }
 
-li {
-    font-size: larger;
-    text-align: left;
+ul::marker {
+    font-family: monospace;
+}
+
+ul>li {
+    position: relative;
+    left: -1.55em;
 }
 
 li::marker {
-    font-family: auto;
+    font-size: larger;
+    font-family: monospace;
 }
 
 a {
@@ -68,10 +85,6 @@ a {
 
 a:hover {
     text-decoration: none;
-}
-
-.list {
-    list-style: square;
 }
 
 .btn {
@@ -90,6 +103,7 @@ a:hover {
     --button_color: var(--white);
     --h1_color: var(--blue);
     --h4_color: var(--red);
+    --span_color: var(--body_color);
     --a_color: var(--body_color);
     --img_filter: none;
 }
@@ -101,6 +115,7 @@ a:hover {
     --button_color: var(--black);
     --h1_color: var(--blue);
     --h4_color: var(--purple);
+    --span_color: var(--body_color);
     --a_color: var(--body_color);
     --img_filter: invert();
 }

@@ -13,7 +13,7 @@ const confirmData = () => {
     $("confirm_form").submit();
 };
 window.onload = () => {
-    $("firstName").innerHTML = 'First Name: ' + urlParm("first_name");
-    $("emailAddress").innerHTML = 'Email Address: ' + urlParm("email_address1");
+    $("firstName").innerHTML = urlParm("first_name");
+    $("emailAddress").innerHTML = urlParm("email_address1");
     $("confirmBtn").onclick = confirmData;
 };
