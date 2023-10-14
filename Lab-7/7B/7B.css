@@ -1,0 +1,102 @@
+:root {
+    --debug: 2px groove rgb(192, 192, 192);
+}
+
+main {
+    border: var(--debug);
+}
+
+.validation {
+    color: red;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 500px;
+    max-width: 500px;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    text-align: left;
+}
+
+fieldset>label {
+    flex: 0 1 60px;
+}
+
+fieldset>input {
+    flex: 1 1 60%;
+    margin: 0 10px;
+}
+
+fieldset>span {
+    flex: 0 1 80px;
+}
+
+input[type="button"]:not([class="btn"]) {
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    background-color: rgb(80, 98, 255);
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+p {
+    margin: unset;
+}
+
+p>label {
+    float: left;
+    text-align: right;
+    width: calc(40% - 1em);
+}
+
+p>span {
+    float: right;
+    text-align: left;
+    width: calc(60% - 1em);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid var(--teal);
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #70809080;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--tr-bg_color-odd);
+}
+
+tr:nth-child(even) {
+    background-color: var(--tr-bg_color-even);
+}
+
+.light-theme {
+    --tr-bg_color-odd: #EEEEEED0;
+    --tr-bg_color-even: #FFFFFFD0;
+}
+
+.dark-theme {
+    --tr-bg_color-odd: #181818D0;
+    --tr-bg_color-even: #222222D0;
+}
