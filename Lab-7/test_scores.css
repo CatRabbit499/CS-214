@@ -75,11 +75,29 @@ table {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid var(--teal);
     text-align: left;
     padding: 8px;
 }
 
+th {
+    background-color: #70809080;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--tr-bg_color-odd);
+}
+
 tr:nth-child(even) {
-    background-color: #eeeeee;
+    background-color: var(--tr-bg_color-even);
+}
+
+.light-theme {
+    --tr-bg_color-odd: #EEEEEED0;
+    --tr-bg_color-even: #FFFFFFD0;
+}
+
+.dark-theme {
+    --tr-bg_color-odd: #181818D0;
+    --tr-bg_color-even: #222222D0;
 }
