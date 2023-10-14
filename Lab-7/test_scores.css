@@ -30,12 +30,10 @@ fieldset>label {
     flex: 0 0 7vb;
     width: 7vb;
     padding: 0.1em;
-    margin-right: 0;
 }
 
 fieldset>input {
     flex: 1 0 30vb;
-    margin-left: 0;
 }
 
 input[type="button"]:not([class="btn"]) {
@@ -54,7 +52,19 @@ input[type="button"]:not([class="btn"]) {
 }
 
 p {
-    margin: 0;
+    margin: unset;
+}
+
+p>label {
+    float: left;
+    text-align: right;
+    width: calc(50% - 1em);
+}
+
+p>span {
+    float: right;
+    text-align: left;
+    width: calc(50% - 1em);
 }
 
 table {

@@ -37,7 +37,8 @@ function initializeResults() {
 
 
 function displayScores() {
-    // Add your code here
+    let scores = $('#scores');
+    scores.toggle();
 }
 
 function displayResults() {
@@ -46,11 +47,11 @@ function displayResults() {
 }
 
 function insertNewTableElement(newName, newScore) {
-   // Add your code here
+    // Add your code here
 }
 
 function initializeScoresTable() {
-//  Add your code here
+    //  Add your code here
 }
 
 
@@ -72,14 +73,14 @@ function addScore() {
 }
 
 window.onload = function () {
-    $('#display_results').on('click',  function() {
+    $('#display_results').on('click', () => {
         displayResults();
     });
 
-    $('#display_scores').on('click',  function() {
+    $('#display_scores').on('click', () => {
         displayScores();
     });
-    $('#add').on('click',  function() {
+    $('#add').on('click', () => {
         addScore();
     });
 
