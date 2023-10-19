@@ -11,6 +11,7 @@
     --teal: #008080;
     --blue: #0000FF;
     --red: #FF0000;
+    --debug: 2px groove rgb(192, 192, 192);
     --icon-moon_open: url(icon/moon-regular.svg);
     --icon-moon_full: url(icon/moon-solid.svg);
     --icon-sun_open: url(icon/sun-regular.svg);

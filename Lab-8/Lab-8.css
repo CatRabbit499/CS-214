@@ -1,0 +1,41 @@
+canvas {
+    border: var(--debug);
+    min-width: 650;
+    min-height: 400;
+    margin-bottom: 0;
+}
+
+canvas:hover {
+    cursor: alias;
+}
+
+fieldset {
+    border: none;
+    position: relative;
+    top: -7em;
+    padding: 0;
+    margin: auto;
+    width: fit-content;
+}
+
+fieldset>a>img {
+    border-radius: 10%;
+    width: 80px;
+    height: auto;
+}
+
+fieldset a:nth-child(1)>img {
+    background-color: red;
+}
+
+fieldset a:nth-child(3)>img {
+    background-color: rgb(43, 116, 226);
+}
+
+fieldset a:nth-child(5)>img {
+    background-color: white;
+}
+
+fieldset button:nth-of-type(1) {
+    background-image: url(img/superhero1.png);
+}
