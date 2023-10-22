@@ -26,6 +26,12 @@
             <img name="slide" id="hero5" src="img/superhero5.png" hidden>
             <img name="slide" id="hero6" src="img/superhero6.png" hidden>
         </canvas>
+        <script>
+            let x = document.querySelector("canvas");
+            x.onclick = () => {
+                window.location = linkOut(current);
+            }
+        </script>
         <fieldset>
             <a href="javascript:changeSlide(1)"><img src="img/superhero1.png"></a>
             <a href="javascript:changeSlide(2)"><img src="img/superhero2.png"></a>

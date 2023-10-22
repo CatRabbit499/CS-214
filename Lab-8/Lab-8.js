@@ -6,7 +6,7 @@ const img = new Image(630, 355);
 
 let initSlides = async () => {
     canvas = document.getElementById("slideshow");
-    canvas.onclick = initSlides;
+    // canvas.onclick = initSlides;
     let slideOffsets = {
         left: (canvas.width - 630) / 2,
         top: undefined
@@ -34,7 +34,7 @@ let initSlides = async () => {
 
         // Change Background to average RGB image values
         let rgb = avgColor();
-        canvas.style.backgroundColor = `rgb(${rgb.r},${rgb.g}, ${rgb.b})`;
+        canvas.style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
     });
 
     /*  Default Image  */
@@ -45,13 +45,34 @@ let initSlides = async () => {
         await sleep(2000).then(() => {
             console.log(test);
             img.src = test;
+            current = i + 1;
         });
+    }
+}
+let current = -1;
+let linkOut = (n) => {
+    switch (n) {
+        case 1:
+            return "https://www.facebook.com/CoverLoverCom/";
+        case 2:
+            return "https://en.wikipedia.org/wiki/Supergirl_(Kara_Zor-El)";
+        case 3:
+            return "https://en.wikipedia.org/wiki/Justice_League";
+        case 4:
+            return "https://en.wikipedia.org/wiki/DC_Comics";
+        case 5:
+            return "https://en.wikipedia.org/wiki/Category:DC_Comics_superheroes";
+        case 6:
+            return "https://letmegooglethat.com/?q=National+Superhero+Day";
+        default:
+            return "";
     }
 }
 
 let changeSlide = (n) => {
     console.log(`Changing To Slide ${n}`);
     img.src = `img/superhero${n}.png`;
+    current = n;
 }
 
 let avgColor = () => {
