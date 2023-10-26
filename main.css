@@ -65,7 +65,6 @@ span {
 img:not([src]),
 img[src=""] {
     content: var(--status-404);
-    width: inherit;
 }
 
 #main {
@@ -124,6 +123,7 @@ a:hover {
     text-decoration: none;
 }
 
+[type="button"],
 .button {
     appearance: button;
     text-decoration: none;

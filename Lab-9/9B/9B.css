@@ -1,3 +1,15 @@
 img[src*='svg'] {
     filter: invert();
 }
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.butterfly {
+    background-color: yellow;
+    display: inline-block;
+    font-family: sans-serif;
+}
