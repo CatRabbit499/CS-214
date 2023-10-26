@@ -1,5 +1,8 @@
 :root {
+    --neon-blue: #5062FF;
     --purple: #800080;
+    --silver: #C0C0C0;
+    --yellow: #FFFF00;
     --green: #008000;
     --white: #FFFFFF;
     --slate: #708090;
@@ -11,11 +14,16 @@
     --teal: #008080;
     --blue: #0000FF;
     --red: #FF0000;
-    --debug: 2px groove rgb(192, 192, 192);
+    --debug: 2px groove var(--yellow);
+    --status-404: url(img/404.png);
     --icon-moon_open: url(icon/moon-regular.svg);
     --icon-moon_full: url(icon/moon-solid.svg);
     --icon-sun_open: url(icon/sun-regular.svg);
     --icon-sun_full: url(icon/sun-solid.svg);
+    --class_button-background_color: var(--neon-blue);
+    --class_button-color: var(--white);
+    --class_button-color-hover: var(--body-color);
+    --css-border_groove: 2px groove var(--silver);
 }
 
 body {
@@ -54,6 +62,12 @@ span {
     color: var(--span-color);
 }
 
+img:not([src]),
+img[src=""] {
+    content: var(--status-404);
+    width: inherit;
+}
+
 #main {
     text-align: center;
     width: max-content;
@@ -79,9 +93,13 @@ ol {
     margin: auto;
 }
 
-ul {
-    list-style-type: ' └───── |';
+ul>li {
+    list-style-type: ' ├───── |';
     list-style-position: inside;
+}
+
+ul>li:nth-last-child(1) {
+    list-style-type: ' └───── |';
 }
 
 ul::marker {
@@ -104,6 +122,30 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+.button {
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    background-color: var(--class_button-background_color);
+    color: var(--class_button-color);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--class_button-background_color);
+    color: var(--class_button-color-hover);
 }
 
 .btn {

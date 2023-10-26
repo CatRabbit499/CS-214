@@ -1,10 +1,5 @@
-main {
-    border: var(--debug);
-}
-
 fieldset {
-    border: var(--debug);
-    border-color: yellow;
+    border: var(--css-border_groove);
     margin: unset;
     padding: unset;
     display: flex;
@@ -30,21 +25,6 @@ fieldset>label {
 
 fieldset>input {
     flex: 1 0 30vb;
-}
-
-input[type="button"]:not([class="btn"]) {
-    border-radius: 10px;
-    border: none;
-    box-shadow: none;
-    background-color: rgb(80, 98, 255);
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 2px 2px;
-    cursor: pointer;
 }
 
 p {

@@ -1,0 +1,11 @@
+img {
+    height: 50vh;
+}
+
+div#options {
+    padding: 1em;
+}
+
+.button {
+    min-width: 50px;
+}

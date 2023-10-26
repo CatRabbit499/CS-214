@@ -1,16 +1,9 @@
-:root {
-    --debug: 2px groove rgb(192, 192, 192);
-}
-
-main {
-    border: var(--debug);
-}
-
 .validation {
-    color: red;
+    color: var(--red);
 }
 
 fieldset {
+    border: var(--css-border_groove);
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -33,21 +26,6 @@ fieldset>input {
 
 fieldset>span {
     flex: 0 1 80px;
-}
-
-input[type="button"]:not([class="btn"]) {
-    border-radius: 10px;
-    border: none;
-    box-shadow: none;
-    background-color: rgb(80, 98, 255);
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 2px 2px;
-    cursor: pointer;
 }
 
 p {
