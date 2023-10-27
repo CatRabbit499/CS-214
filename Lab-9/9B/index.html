@@ -17,22 +17,28 @@
         <noscript>Enable JavaScript!</noscript>
     </nav>
     <main id="main">
-        <h1>Changing Caterpillar</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Butterfly_icon_%28Noun_Project%29.svg">
-        <h1>The Caterpillar</h1>
-
-        <p id='p1'>This is a <strong>caterpillar</strong> in its natural habitat:</p>
-        <br>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Monarch_caterpillar_on_swan_plant_branchlet.jpg/640px-Monarch_caterpillar_on_swan_plant_branchlet.jpg"
-            width="400">
-        <br>
-        <a href="https://en.wikipedia.org/wiki/Catepillar">Caterpillar</a>
-
+        <!-- <h1>Changing Caterpillar</h1> -->
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Butterfly_icon_%28Noun_Project%29.svg"> -->
+        <hgroup id="s1">
+            <h1>The Caterpillar</h1>
+            <p id='p1'>This is a <strong>caterpillar</strong> in its natural habitat:</p>
+            <figure id="photo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Monarch_caterpillar_on_swan_plant_branchlet.jpg"
+                    width="400">
+                <figcaption><a href="https://en.wikipedia.org/wiki/Caterpillar">Caterpillar</a></figcaption>
+            </figure>
+        </hgroup>
+        <hgroup id="facts" hidden>
+            <h2>Butterfly Facts</h2>
+            <cite>
+                Sourced from
+                <a href="https://www.pasquesi.com/expert-advice/fun-facts-about-butterflies">Pasequi</a>
+            </cite>
+            <div id="list"></div>
+        </hgroup>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <p>
-            <input type="button" id="transform" value="Metamorphose">
-            <input type="button" id="restore" value="Restore" style="Display:None">
-        </p>
+        <button id="transform">Metamorphose</button>
+        <button id="restore">Restore</button>
     </main>
     <foot>
 

@@ -2,6 +2,15 @@ img[src*='svg'] {
     filter: invert();
 }
 
+h2 {
+    margin-bottom: 0;
+}
+
+cite {
+    margin-bottom: 1em;
+    font-size: small;
+}
+
 .result {
     font-size: 20px;
     font-weight: bold;
@@ -9,7 +18,22 @@ img[src*='svg'] {
 }
 
 .butterfly {
-    background-color: yellow;
+    color: orangered;
     display: inline-block;
     font-family: sans-serif;
+}
+
+#restore {
+    display: none;
+}
+
+#list {
+    text-align: justify;
+    margin: auto;
+    width: 600px;
+}
+
+/* Remove external sitenav */
+ul.pager {
+    display: none;
 }
