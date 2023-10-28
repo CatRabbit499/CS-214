@@ -2,9 +2,10 @@
 let slides;
 
 window.onload = () => $
-    .getJSON("slides.json", (json) => slides = json)
+    .getJSON("slides.json", json => slides = json)
     .done(cycle)
     .fail(() => console.log("Fail!"));
+
 let slidenum = 0;
 function cycle() {
     slidenum++;
@@ -12,10 +13,8 @@ function cycle() {
     $('#slide_image').attr('src', slides[slidenum].src);
     $('#slide_text').html(slides[slidenum].caption);
     $('#slide_link').attr('href', slides[slidenum].url);
-    if (slides[slidenum].url.length > 0) {
-        $('#slide_image')
-            .css('cursor', 'pointer')
-            .onclick = () => location.href = slides[slidenum].url;
-    }
-    setTimeout(cycle, 3000);
+    $('#slide_image')
+        .css('cursor', 'pointer')
+        .onclick = () => location.href = slides[slidenum].url;
+    setTimeout(cycle, 4000);
 }

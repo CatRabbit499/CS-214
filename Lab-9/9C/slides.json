@@ -1,32 +1,42 @@
 [
     {
-        "src": "img/lighthouse.jpg",
-        "url": "http://www.spainisculture.com/en/propuestas_culturales/faros_de_galicia_los_guardianes_del_fin_del_mundo.html",
-        "caption": "Galicia Lighthouse"
+        "src": "img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2).jpg",
+        "url": "https://en.wikipedia.org/wiki/Paris",
+        "caption": "La Tour Eiffel; Shot From Saint-Jacques Tower, Paris"
     },
     {
-        "src": "img/asturiasHorreo.jpg",
-        "url": "https://en.wikipedia.org/wiki/H%C3%B3rreo",
-        "caption": "Asturias Horreo"
+        "src": "img/Absolute_ponts_couverts_02.jpg",
+        "url": "https://en.wikipedia.org/wiki/Ponts_Couverts,_Strasbourg",
+        "caption": "Ponts Couverts; Shot from Vauban Dam, Strasbourg"
     },
     {
-        "src": "img/Picos-de-Europa-potes.jpg",
-        "url": "https://www.spainthisway.com/places/potes.php",
-        "caption": "Potes, Cantabria"
+        "src": "img/Mont-Saint-Michel_vu_du_ciel.jpg",
+        "url": "https://en.wikipedia.org/wiki/Mont-Saint-Michel",
+        "caption": "Mont Saint-Michel; Drone Footage, Normandy"
     },
     {
-        "src": "img/mogrovejo.jpg",
-        "url": "https://en.wikipedia.org/wiki/Mogrovejo",
-        "caption": "Mogrovejo, Cantabria"
+        "src": "img/toulouse_main_445x280_KGkAkWV.jpg",
+        "url": "https://en.wikipedia.org/wiki/Garonne",
+        "caption": "Dome de la Grave; Shot from across the Garonne river, Toulouse"
     },
     {
-        "src": "img/leon.jpg",
-        "url": "https://www.123rf.com/photo_17050812_countryside-of-burgos-castilla-y-leon-spain.html",
-        "caption": "Burgos, Castilla y Leon"
+        "src": "img/Château_d'eau_du_Peyrou,_Montpellier_06.jpg",
+        "url": "https://en.wikipedia.org/wiki/Montpellier",
+        "caption": "Château d'eau du Peyrou; Shot from Promenade du Peyrou, Montpellier"
     },
     {
-        "src": "img/galiciaCoast.jpg",
-        "url": "https://www.travelawaits.com/2549962/places-to-explore-in-galicia-spain/",
-        "caption": "Galicia Coast"
+        "src": "img/ColmarFrance.jpg",
+        "url": "https://en.wikipedia.org/wiki/Colmar",
+        "caption": "Little Venice; Shot from Lauch River canals, Colmar"
+    },
+    {
+        "src": "img/_Sur_le_Pont_d'Avignon_on_y_danse__is_the_famous_song,_but_now_we_see_only_many_tourist_just_standing_there_-_panoramio.jpg",
+        "url": "https://en.wikipedia.org/wiki/Pont_Saint_Bénézet",
+        "caption": "Sur le Pont d'Avignon; Pont Saint-Bénézet, Avignon"
+    },
+    {
+        "src": "img/Aiguille_du_Dru_3.jpg",
+        "url": "https://en.wikipedia.org/wiki/French_Alps",
+        "caption": "Aguille du Dru; Drone footage, French Alps"
     }
 ]
