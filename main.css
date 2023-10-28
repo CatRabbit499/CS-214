@@ -42,6 +42,11 @@ body {
     margin: auto;
 }
 
+.light-theme #logo {
+    background-color: white;
+    mix-blend-mode: multiply;
+}
+
 h1 {
     color: var(--h1-color);
 }
@@ -79,7 +84,7 @@ img[src=""] {
     system: numeric;
     symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9' 'A' 'B' 'C' 'D' 'E' 'F';
     prefix: 'Lab ';
-    suffix: ' - |';
+    suffix: ' ─ ';
     pad: 2 '0'
 }
 
@@ -103,7 +108,7 @@ ol#index ::marker {
 }
 
 ol#index ul>li {
-    list-style-type: ' ├────── |';
+    list-style-type: ' ├────── ';
     list-style-position: inside;
     /* height: 1em; */
     position: relative;
@@ -111,7 +116,7 @@ ol#index ul>li {
 }
 
 ol#index ul>li:nth-last-child(1) {
-    list-style-type: ' └────── |';
+    list-style-type: ' └────── ';
 }
 
 
