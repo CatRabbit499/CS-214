@@ -72,12 +72,19 @@ img[src=""] {
     content: var(--status-404);
 }
 
+header {
+    /* outline: var(--debug); */
+    text-align: center;
+    /* width: max-content; */
+    margin: auto;
+}
+
 #main {
     text-align: center;
     width: max-content;
     margin: auto;
     padding: 1em;
-    /* outline: 1px solid white; */
+    outline: 1px solid white;
 }
 
 @counter-style hex {
@@ -155,6 +162,9 @@ button,
 }
 
 .btn {
+    position: absolute;
+    left: 2px;
+    top: 2px;
     height: 50px;
     width: 50px;
     border-radius: 25px;
