@@ -1,8 +1,7 @@
 $(() => {
-    $("#pic_box").children().each((index, el) => {
-        console.log(index, el, this);
-        // this.first().addEventListener('click', e => {
-        //     console.log(e);
-        // });
+    $("#pic_box").children().forEach(el => {
+        el.find("img:first").addEventListener('click', e => {
+            console.log(e);
+        });
     });
 });
