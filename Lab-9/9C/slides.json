@@ -1,41 +1,41 @@
 [
     {
-        "src": "img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2).jpg",
+        "src": "https://catrabbit499.github.io/assets/CS-214/Lab-9/9C/img/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2).jpg",
         "url": "https://en.wikipedia.org/wiki/Paris",
         "caption": "La Tour Eiffel; Shot From Saint-Jacques Tower, Paris"
     },
     {
-        "src": "img/Absolute_ponts_couverts_02.jpg",
+        "src": "https://catrabbit499.github.io/assets/CS-214/Lab-9/9C/img/Absolute_ponts_couverts_02.jpg",
         "url": "https://en.wikipedia.org/wiki/Ponts_Couverts,_Strasbourg",
         "caption": "Ponts Couverts; Shot from Vauban Dam, Strasbourg"
     },
     {
-        "src": "img/Mont-Saint-Michel_vu_du_ciel.jpg",
+        "src": "https://catrabbit499.github.io/assets/CS-214/Lab-9/9C/img/Mont-Saint-Michel_vu_du_ciel.jpg",
         "url": "https://en.wikipedia.org/wiki/Mont-Saint-Michel",
         "caption": "Mont Saint-Michel; Drone Footage, Normandy"
     },
     {
-        "src": "img/toulouse_main_445x280_KGkAkWV.jpg",
+        "src": "https://catrabbit499.github.io/assets/CS-214/Lab-9/9C/img/toulouse_main_445x280_KGkAkWV.jpg",
         "url": "https://en.wikipedia.org/wiki/Garonne",
         "caption": "Dome de la Grave; Shot from across the Garonne river, Toulouse"
     },
     {
-        "src": "img/Château_d'eau_du_Peyrou,_Montpellier_06.jpg",
+        "src": "https://catrabbit499.github.io/assets/CS-214/Lab-9/9C/img/Château_d'eau_du_Peyrou,_Montpellier_06.jpg",
         "url": "https://en.wikipedia.org/wiki/Montpellier",
         "caption": "Château d'eau du Peyrou; Shot from Promenade du Peyrou, Montpellier"
     },
     {
-        "src": "img/ColmarFrance.jpg",
+        "src": "https://catrabbit499.github.io/assets/CS-214/Lab-9/9C/img/ColmarFrance.jpg",
         "url": "https://en.wikipedia.org/wiki/Colmar",
         "caption": "Little Venice; Shot from Lauch River canals, Colmar"
     },
     {
-        "src": "img/Sur_le_Pont_d'Avignon_-_panoramio.jpg",
+        "src": "https://catrabbit499.github.io/assets/CS-214/Lab-9/9C/img/Sur_le_Pont_d'Avignon_-_panoramio.jpg",
         "url": "https://en.wikipedia.org/wiki/Pont_Saint_Bénézet",
         "caption": "Sur le Pont d'Avignon; Pont Saint-Bénézet, Avignon"
     },
     {
-        "src": "img/Aiguille_du_Dru_3.jpg",
+        "src": "https://catrabbit499.github.io/assets/CS-214/Lab-9/9C/img/Aiguille_du_Dru_3.jpg",
         "url": "https://en.wikipedia.org/wiki/French_Alps",
         "caption": "Aguille du Dru; Drone footage, French Alps"
     }
