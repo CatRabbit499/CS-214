@@ -5,9 +5,13 @@
 .lightning {
     display: none;
     position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 0;
+    left: 0;
+    top: 50px;
+    z-index: -2;
+}
+
+header>img {
+    margin: auto;
 }
 
 p {
@@ -38,25 +42,37 @@ p {
     overflow: hidden;
 }
 
-#head {
-    height: 172px;
-}
-
 .face {
     position: relative;
     left: 0px;
     top: 0px;
-    z-index: 0;
+    z-index: 10;
+
+}
+
+.face:hover {
+    /* border: 2px solid greenyellow; */
+    opacity: 0.8;
+}
+
+#head {
+    /* top: 0; */
+    height: 172px;
+    background-image: url(img/headsstrip.jpg);
 }
 
 #eyes {
+    /* top: 0px; */
     height: 79px;
+    background-image: url(img/eyesstrip.jpg);
 }
 
 #nose {
     height: 86px;
+    background-image: url(img/nosesstrip.jpg);
 }
 
 #mouth {
     height: 117px;
+    background-image: url(img/mouthsstrip.jpg);
 }
