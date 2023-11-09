@@ -1,0 +1,9 @@
+svg {
+    margin-right: 1em;
+    height: 5em;
+}
+
+#layer0 {
+    stroke: aqua;
+    stroke-width: 10;
+}
