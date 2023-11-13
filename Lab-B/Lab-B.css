@@ -1,0 +1,42 @@
+form {
+    display: flex;
+    justify-content: right;
+    flex-flow: column;
+    margin: auto;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column;
+    padding: 0.5em;
+    margin: 0;
+    gap: 0.5em;
+}
+
+label {
+    line-height: 150%;
+    flex-basis: 16%;
+    align-self: stretch;
+    text-align: right;
+}
+
+div {
+    display: flex;
+    gap: 0.5em;
+
+}
+
+input {
+    height: 2em;
+    flex: 1;
+}
+
+button {
+    width: max-content;
+}
+
+span {
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+}
