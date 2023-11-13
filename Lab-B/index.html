@@ -6,6 +6,7 @@
     <title>jQuery Account Creation Form</title>
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="./Lab-B.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="Lab-B.js"></script>
@@ -21,13 +22,27 @@
     </header>
     <main id="main">
         <h1>jQuery Account Creation Form</h1>
-        <form id="new-account-form">
-            <p><input type="email" size="30" name="email" value="" placeholder="Enter your email address"></p>
-            <p><input type="text" size="30" name="password1" value="" placeholder="Enter a password"></p>
-            <p><input type="text" size="30" name="password2" value="" placeholder="Reenter the password"></p>
-            <button type="submit">Create Account</button>
+        <form id="new-account-form" action="javascript:submitted();" method="get">
+            <fieldset>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="jdoe@example.com" autocomplete="email">
+                </div>
+                <div>
+                    <label for="password1">Password</label>
+                    <input type="password" name="password1" placeholder="Enter a Password" autocomplete="new-password">
+                </div>
+                <div>
+                    <label for="password2">&nbsp;</label>
+                    <input type="password" name="password2" placeholder="Reenter Password" autocomplete="new-password">
+                </div>
+                <div>
+                    <label for="undefined">&nbsp;</label>
+                    <span><button type="submit">Create Account</button></span>
+                </div>
+            </fieldset>
         </form>
-        <p>Form Output: <span id="output"></span></p>
+        <p><span id="output"></span></p>
     </main>
     <footer>
     </footer>

@@ -1,0 +1,73 @@
+body {
+    font-family: Roboto;
+}
+
+form {
+    display: flex;
+    justify-content: right;
+    flex-flow: column;
+    margin: auto;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column;
+    padding: 0.5em;
+    margin: 0;
+    gap: 0.5em;
+}
+
+label {
+    line-height: 150%;
+    flex-basis: 18%;
+    align-self: stretch;
+    text-align: right;
+}
+
+div {
+    display: flex;
+    gap: 0.5em;
+
+}
+
+input {
+    height: 2em;
+    flex: 1;
+}
+
+button {
+    width: max-content;
+}
+
+span {
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+}
+
+#output font {
+    width: fit-content;
+    margin: auto;
+    /* margin-top: 0; */
+    /* margin: auto; */
+}
+
+#output {
+    display: inline-block;
+    /* border: 1px solid white; */
+    text-align: start;
+    width: 500px;
+    /* width: fit-content; */
+    /* min-width: 30%; */
+    height: 30vh;
+    margin: auto;
+}
+
+#output span {
+    margin-right: 1em;
+    text-align: right;
+    display: inline;
+    float: left;
+    width: 30%;
+    color: cornflowerblue;
+}
