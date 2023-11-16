@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="Lab-D.js"></script>
 </head>
 
 <body class="dark-theme">
@@ -19,7 +18,10 @@
             <script src="../main.js"></script>
             <noscript>Enable JavaScript!</noscript>
         </nav>
-        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+        <input list="results" class="search-box" placeholder="Search for a city..." autocomplete="off" />
+        <datalist id="results">
+            <option value="test">lol</option>
+        </datalist>
     </header>
     <main id="main">
         <section class="location">
@@ -33,7 +35,7 @@
         </div>
     </main>
     <footer>
-
+        <script src="Lab-D.js"></script>
     </footer>
 </body>
 

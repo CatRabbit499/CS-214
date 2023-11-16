@@ -26,8 +26,8 @@ header {
 }
 
 header input {
-    width: 100%;
-    max-width: 280px;
+    width: calc(30% + 100px);
+    /* max-width: 280px; */
     padding: 10px 15px;
     border: none;
     outline: none;
@@ -86,6 +86,10 @@ main {
     margin-bottom: 15px;
     text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
 }
+
+/* test {
+    text-shadow: rgba(#000000, 0.5);
+} */
 
 .current .hi-low {
     color: #FFF;
