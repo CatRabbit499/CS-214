@@ -1,13 +1,27 @@
 const api = {
     key: "eed088d1a1c1d42d874ab4b73cb3c19e",
-    geo: "http://api.openweathermap.org/geo/1.0/direct",
+    geo: "https://api.openweathermap.org/geo/1.0/direct",
+    reverse: "https://api.openweathermap.org/geo/1.0/reverse",
+    geoip: {
+        url: "https://api.geoapify.com/v1/ipinfo",
+        key: "3fe4ef32ca884e3583f72f4e9c9e2ce2"
+    },
     weather: "https://api.openweathermap.org/data/2.5/weather"
 }
+
+// $.ajax({
+//     url: api.geoip.url,
+//     data: {
+//         apiKey: api.geoip.key
+//     },
+//     success: (rsp) => rsp.location,
+//     error: (xhr) => console.error("Error Parsing Request: ", xhr.responseJSON)
+// }).then(getLocation);
 
 const searchbox = $('.search-box');
 searchbox.on('keyup', e => {
     const search = searchbox.val();
-    console.log(search);
+    // console.log(search);
     if (search.length >= 3) {
         $.ajax({
             url: api.geo,
@@ -18,7 +32,7 @@ searchbox.on('keyup', e => {
             },
             success: (rsp) => {
                 suggest(rsp);
-                console.log("Data: ", rsp, rsp[0]);
+                // console.log("Data: ", rsp, rsp[0]);
             },
             error: (xhr) => console.error("Error Parsing Request: ", xhr.responseJSON)
         });
@@ -34,14 +48,26 @@ function suggest(inp) {
     for (let i = 0; i < inp.length - 1; i++) {
         $('#results').append(`<option value="${inp[i].name}, ${inp[i].state}, ${inp[i].country}"></option>`);
     }
-    // inp.forEach(element => {
-    //     console.log(element, element.name, element.state, element.country, element.local_names.en);
+}
 
-    // });
+function getLocation(query) {
+    console.log("Query: ", query);
+    $.ajax({
+        url: api.reverse,
+        type: "get",
+        data: {
+            lat: query.location.latitude,
+            lon: query.location.longitude,
+            APPID: api.key
+        },
+        success: (rsp) => getResults(rsp[0].name),
+        error: (xhr) => console.error("Error Parsing Request: ", xhr.responseJSON)
+    });
 }
 
 function getResults(query) {
     console.log("Results...");
+    console.log(query);
     $.ajax({
         url: api.weather,
         type: "get",
@@ -53,14 +79,10 @@ function getResults(query) {
         success: (rsp) => rsp.weather,
         error: (xhr) => console.error("Error Parsing Request: ", xhr)
     }).then(displayResults);
-    // fetch(`${api.weather}weather?q=${query}&units=metric&APPID=${api.key}`)
-    //     .then(weather => {
-    //         return weather.json();
-    //     }).then(displayResults);
 }
 
 function displayResults(weather) {
-    console.log(weather);
+    // console.log(weather);
     const fields = {
         city: $('.location .city'),
         date: $('.location .date'),
