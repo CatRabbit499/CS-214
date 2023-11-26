@@ -1,0 +1,72 @@
+main {
+    font-family: Roboto;
+    text-align: unset;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    height: 25px;
+}
+
+input[type="submit"] {
+    margin-bottom: 2em;
+}
+
+#out {
+    tab-size: 4;
+    padding: 1em;
+    min-width: 200px;
+    width: fit-content;
+    text-align: left;
+    margin: auto;
+    min-height: 20vh;
+    outline: 2px groove #C0C0C0;
+}
+
+#color {
+    width: fit-content;
+    margin: auto;
+}
+
+#R,
+#G,
+#B {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+}
+
+#swatch {
+    width: 120px;
+    height: 100px;
+    margin-top: 9px;
+    margin-left: 18px;
+    background-image: none;
+    text-align: center;
+}
+
+#R .ui-slider-range {
+    background: #ef2929;
+}
+
+#R .ui-slider-handle {
+    border-color: #ef2929;
+}
+
+#G .ui-slider-range {
+    background: #8ae234;
+}
+
+#G .ui-slider-handle {
+    border-color: #8ae234;
+}
+
+#B .ui-slider-range {
+    background: #729fcf;
+}
+
+#B .ui-slider-handle {
+    border-color: #729fcf;
+}

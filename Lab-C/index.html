@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Alien Sighting Form</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="./Lab-C.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/dark-hive/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+        integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+</head>
+
+<body class="dark-theme">
+    <header id="top">
+        <nav>
+            <button class="btn"></button>
+            <script src="../main.js"></script>
+            <noscript>Enable JavaScript!</noscript>
+        </nav>
+    </header>
+    <main id="main">
+        <h1>Alien Sighting Form</h1>
+        <form id="aliens" action="javascript:" method="get">
+            <h3>Sighting Date</h3>
+            <input type="date" class="date ui-corner-all ui-button">
+            <h3>Alien Type</h3>
+            <div id="group">
+                <input type="radio" name="type" class="type" id="T1" value="Human-Like"><label
+                    for="T1">Human-Like</label>
+                <input type="radio" name="type" class="type" id="T2" value="Worm-Like"><label for="T2">Worm-Like</label>
+                <input type="radio" name="type" class="type" id="T3" value="Insect-Like"><label
+                    for="T3">Insect-Like</label>
+                <input type="radio" name="type" class="type" id="T4" value="Fish-Like"><label for="T4">Fish-Like</label>
+                <input type="radio" name="type" class="type" id="T5" value="Bird-Like"><label for="T5">Bird-Like</label>
+            </div>
+            <h3>Weight in Pounds</h3>
+            <input type="number" name="weight" class="spinner" id="S1">
+            <h3>Height in Feet</h3>
+            <input type="number" name="height" class="spinner" id="S2">
+            <h3>Number of Eyes</h3>
+            <input type="number" name="eyes" class="spinner" id="S3">
+            <h3>Number of Arms</h3>
+            <input type="number" name="arms" class="spinner" id="S4">
+            <h3>Number of Legs</h3>
+            <input type="number" name="feet" class="spinner" id="S5">
+            <h3>Main Color</h3>
+            <div id="color">
+                <div id="R" class="slider ui-corner-all ui-slider-horizontal"></div>
+                <div id="G" class="slider ui-corner-all ui-slider-horizontal"></div>
+                <div id="B" class="slider ui-corner-all ui-slider-horizontal"></div>
+                <input type="text" name="color" pattern="^#[A-F\d]{6}" maxlength="7" minlength="7" id="swatch"
+                    class="ui-widget-content ui-corner-all">
+            </div>
+            <br>
+            <input type="submit" action="submit" class="ui-button ui-corner-all">
+        </form>
+        <pre id="out" contenteditable="true" class="lang-js s-code-block" type="text/json"></pre>
+    </main>
+    <footer>
+        <script src="Lab-C.js"></script>
+    </footer>
+</body>
+
+</html>
