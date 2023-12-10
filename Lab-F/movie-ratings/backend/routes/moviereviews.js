@@ -13,13 +13,14 @@ router.route('/:id').get((req, res) => {
 });
 
 router.route('/add').post((req, res) => {
+    const username = req.body.username;
     const moviename = req.body.moviename;
     const moviereview = req.body.moviereview;
     const newMovieReview = new MovieReview({
+        username,
         moviename,
         moviereview,
     });
-
     newMovieReview.save()
         .then(() => res.json('Movie Review added!'))
         .catch(err => res.status(400).json('Error: ' + err));
@@ -42,4 +43,5 @@ router.route('/update/:id').post((req, res) => {
         })
         .catch(err => res.status(400).json('Error: ' + err));
 });
+
 module.exports = router; 
